@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- head %>
+<body>
+    <%- header %>
+    <main class="flex">
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/<%= src %>" frameborder="0"></iframe>
+            <ul id="info">
+                <li><%= title %></li>
+                <li><%= speaker %></li>
+                <li><%= date %></li>
+                <li><%= content %></li>
+                <li>
+                    <ul>
+                        <% tags.forEach(tag=>{ %>
+                            <li>
+                                <a href><%= tag %></a>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="comment">
+            <div class="comment">コメント欄</div>
+            <div id="disqus_thread">
+                <!-- DON'T EDIT BELOW THIS LINE -->
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://libet-2.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', + new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable Javascript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

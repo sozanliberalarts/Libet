@@ -1,0 +1,33 @@
+{
+  "name": "libet-beta",
+  "version": "0.0.0",
+  "description": "操山を揺るがすアイデア",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tootallnate/once": "^3.0.0",
+    "@types/node": "^22.5.3",
+    "abab": "^2.0.6",
+    "accepts": "^1.3.8",
+    "agent-base": "^7.1.1",
+    "ansi-styles": "^6.2.1",
+    "array-flatten": "^3.0.0",
+    "async": "^3.2.6",
+    "asynckit": "^0.4.0",
+    "balanced-match": "^3.0.1",
+    "body-parser": "^1.20.2",
+    "brace-expansion": "^4.0.0",
+    "bytes": "^3.1.2",
+    "call-bind": "^1.0.7",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jsdom": "^25.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2"
+  }
+}

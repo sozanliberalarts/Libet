@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<%- head %>
+<body>
+  <%- header %>
+  <div id="subHeader">
+    <div class="margin">
+      <h1>Libet</h1>
+      <p>尊敬する発表を探す場所</p>
+    </div>
+  </div>
+  <main class="margin">
+    <h2>search</h2>
+    <label>
+      <span>キーワード</span>
+      <input id="bar">
+    </label>
+    <label>
+      <span>絞り込み</span>
+      <div>
+        <button class="clicked">title</button>
+        <button>speaker</button>
+        <button>tags</button>
+      </div>
+    </label>
+    <h2>result</h2>
+    <ul id="videos"></ul>
+  </main>
+  <script type="text/javascript" src="views/search/script.js"></script>
+</body>
+</html>

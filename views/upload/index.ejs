@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- head %>
+<body>
+    <%- header %>
+    <div id="subHeader">
+        <div class="margin">
+            <h1>Upload</h1>
+            <p>プレゼンをみんなに知らせる場所</p>
+        </div>
+    </div>
+    <main class="margin">
+        <label for="src">
+            <span>URL</span>
+        </label>
+        <input type="url" name="src" required>
+        <label for="title">
+            <span>Title</span>
+        </label>
+        <input type="text" name="title" required>
+        <label for="speaker">
+            <span>Speaker</span>
+        </label>
+        <input type="text" name="speaker" required>
+        <label for="date">
+            <span>Date</span>
+        </label>
+        <input type="date" name="date" required>
+        <label for="content">
+            <span>Content</span>
+        </label>
+        <input type="text" name="content" required>
+        <label for="tags">
+            <span>Tags(小文字,カンマ区切り)</span>
+        </label>
+        <input type="text" name="tags" required>
+        <button id="button" class="red round">Send!</button>
+    </main>
+</body>
+<script src="/views/upload/script.js" type="text/javascript"></script>
+</html>
