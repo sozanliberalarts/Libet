@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "操山を揺るがすアイデア",
   "main": "index.js",
-  "scripts": "start": "node index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
   "author": "",
   "license": "ISC",
   "dependencies": {
