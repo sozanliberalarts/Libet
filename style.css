@@ -168,7 +168,7 @@ button {
 }
 
 #videos li img {
-    border-radius: 8%;
+    border-radius: 10px;
     width: 100%;
     object-fit: cover;
     aspect-ratio: 16/9;
@@ -184,7 +184,7 @@ button {
 
 #videos p {
     margin: 0;
-    color: #888;
+    color: #2b2b2b;
 }
 
 .margin {

@@ -16,7 +16,7 @@ async function liUpdate(){
   videos.innerHTML = result.map(video=>
   `<li>
   <a href="/announcements/${video.title}">
-    <img src="https://img.youtube.com/vi/${video.src}/0.jpg">
+    <img src="https://img.youtube.com/vi/${video.src}/0.jpg" alt="YouTube thumbnail">
     <div>${video.title}</div>
     <div>
       <p>${video.speaker}</p>
