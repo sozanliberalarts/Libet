@@ -25,7 +25,7 @@
     "call-bind": "^1.0.7",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
-    "jsdom": "^25.0.0"
+    "jsdom": "^25.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2"
