@@ -1,41 +1,35 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <%- head %>
 <body>
-    <%- header %>
-    <div id="subHeader">
-        <div class="margin">
-            <h1>Upload</h1>
-            <p>プレゼンをみんなに知らせる場所</p>
-        </div>
+  <%- header %>
+  <div id="subHeader">
+    <div class="margin">
+      <h1>Upload</h1>
+      <p>プレゼンをみんなに知らせる場所</p>
     </div>
-    <main class="margin">
-        <label for="src">
-            <span>URL</span>
-        </label>
-        <input type="url" name="src" required>
-        <label for="title">
-            <span>Title</span>
-        </label>
-        <input type="text" name="title" required>
-        <label for="speaker">
-            <span>Speaker</span>
-        </label>
-        <input type="text" name="speaker" required>
-        <label for="date">
-            <span>Date</span>
-        </label>
-        <input type="date" name="date" required>
-        <label for="content">
-            <span>Content</span>
-        </label>
-        <input type="text" name="content" required>
-        <label for="tags">
-            <span>Tags(小文字,カンマ区切り)</span>
-        </label>
-        <input type="text" name="tags" required>
-        <button id="button" class="red round">Send!</button>
-    </main>
+  </div>
+  <main class="margin">
+    <label>
+      <span>URL(検索バーのやつ)</span><input name="src" required>
+    </label>
+    <label>
+      <span>Title</span><input name="title" required>
+    </label>
+    <label>
+      <span>Speaker(姓名全角スペース区切り)</span><input name="speaker" required>
+    </label>
+    <label>
+      <span>Date(YYYY/MM/DD方式)</span><input name="date" required>
+    </label>
+    <label>
+      <span>Content</span><input name="content" required>
+    </label>
+    <label>
+      <span>Tags(小文字カンマ区切り)</span><input name="tags" required>
+    </label>
+    <button id="button" class="red round">Send!</button>
+  </main>
+  <script src="views/upload/script.js"></script>
 </body>
-<script src="/views/upload/script.js" type="text/javascript"></script>
 </html>

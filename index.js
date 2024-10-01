@@ -1,7 +1,7 @@
 const express = require("express"),
   fs = require("fs");
 
-const json = JSON.parse(fs.readFileSync("./video.json", "utf8") || null);
+const json = JSON.parse(fs.readFileSync("./video.json", "utf8"));
 const port = 3000;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
