@@ -1,6 +1,9 @@
 const express = require("express"),
   fs = require("fs"),
+  path = require("path"),
   RateLimit = require("express-rate-limit");
+
+const SAFE_ROOT = path.resolve(__dirname, 'public');
 
 const json = JSON.parse(fs.readFileSync("./video.json", "utf8"));
 const port = 3000;
@@ -38,8 +41,12 @@ app.post("/api/upload",(req, res) => {
   res.send("");
 });
 app.use((req, res, next) => {
-  const url = __dirname + req.originalUrl;
-  fs.existsSync(url) ? res.sendFile(url) : next();
+  const requestedPath = path.resolve(SAFE_ROOT, '.' + req.originalUrl);
+  if (requestedPath.startsWith(SAFE_ROOT) && fs.existsSync(requestedPath)) {
+    res.sendFile(requestedPath);
+  } else {
+    next();
+  }
 }, notFound);
 
 app.listen(port, () => console.log(`running on ${port}`));
